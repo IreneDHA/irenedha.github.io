@@ -127,7 +127,7 @@
           <!-- Alternativa si no se abre el correo -->
           <div id="alternativa" class="hidden mt-4 rounded-md bg-yellow-200 px-4 py-4 text-sm text-yellow-800">
             <p class="font-bold">¿No se ha abierto tu correo?</p>
-            <p class="mt-1">Copia mi email y pega el mensaje en tu programa de correo:</p>
+            <p class="mt-1">Copia mi email y pega el mensaje en tu app de correo:</p>
             <p class="mt-2 flex items-center justify-between gap-2">
               <span class="font-mono select-all break-all">irene.hoz.atero@gmail.com</span>
               <button type="button" id="copiar-email"
@@ -193,7 +193,7 @@
       if (mensaje) cuerpo += "\nMensaje:\n" + mensaje + "\n";
       cuerpo += "\nGracias,\n" + nombre;
 
-      // Se muestra la alternativa por si no hay programa de correo instalado
+      // Se muestra la alternativa por si no hay app de correo instalado
       textoMensaje.value = "Asunto: " + asunto + "\n\n" + cuerpo;
       alternativa.classList.remove("hidden");
       gracias.classList.remove("hidden");
